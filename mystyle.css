@@ -72,6 +72,55 @@
   margin-right: var(--mb-2);
 }
 
+.bg {
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.bg:before {
+  content: '';
+  background: linear-gradient(45deg, rgb(130, 0, 255), rgb(130, 15, 255), rgb(130, 30, 255), rgb(130, 45, 255),  rgb(130, 60, 255), rgb(130, 75, 255), rgb(130, 60, 255), rgb(130, 45, 255), rgb(130, 30, 255), rgb(130, 15, 255), rgb(130, 0, 255));
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.bg:active {
+  color: black;
+  transition: 0.5s ease;
+}
+
+.bg:active:after {
+  background: transparent;
+}
+
+.bg:hover:before {
+  opacity: 1;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}
+
+@media screen and (max-width: 500px) {
+  .glow-on-hover{
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+
 .l-header {
   width: 100%;
   padding: 0.5rem;
@@ -180,6 +229,7 @@ img {
   display: block;
 }
 
+
 .home {
   position: relative;
   row-gap: 5rem;
@@ -258,7 +308,7 @@ img {
 }
 
 .about__text{
-  font-weight: 500;
+  font-weight: 700;
   color: var(--second-color);
 }
 
