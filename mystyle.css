@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 :root {
   --header-height: 3rem;
@@ -78,7 +82,7 @@
 
 .bg {
   content: '';
-  background: linear-gradient(45deg, #8000ff , #850bff, #8f1fff, #9b37ff,  #a041ff, #b468ff, #b468ff, #9d3aff,  #9b37ff, #8f1fffff, #850bff, #8000ff);
+  background: linear-gradient(45deg, #8000ff , #850bff, #8f1fff, #9b37ff,  #b641ff, #d941ff,  #d437ff, #8f1fffff, #850bff, #8000ff);
   background-size: 400%;
   animation: glowing 20s linear infinite;
 }
