@@ -65,7 +65,7 @@ html{
 
 .section {
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 
@@ -417,12 +417,8 @@ img {
   width: 30%;
 }
 
-.skills__php {
-  width: 45%;
-}
-
 .skills__cpp {
-  width: 85%;
+  width: 75%;
 }
 
 .skills__py {
@@ -619,7 +615,7 @@ img {
 
   .section {
     padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
   }
 
   .section-title {
