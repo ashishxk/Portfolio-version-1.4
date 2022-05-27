@@ -153,6 +153,7 @@ html {
 }
 
 .nav {
+  max-width: 1024px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -600,7 +601,7 @@ img {
 
   .about__button {
     font-size: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 0.5rem;
   }
 
 }
