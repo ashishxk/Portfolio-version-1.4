@@ -298,6 +298,9 @@ img {
   background-color: var(--second-color);
 }
 
+.btn{
+  padding-top: 1.75rem;
+}
 
 .about__container {
   row-gap: 2rem;
