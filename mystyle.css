@@ -18,7 +18,8 @@ html{
 
   --first-color: #1cabaf;
   --second-color: #151515;
-  --third-color: #fff;
+  --third-color: white;
+  --fourth-color: #922ffc;
 
   --body-font: 'Space Mono', sans-serif;
   --big-font-size: 2rem;
@@ -78,9 +79,6 @@ html{
 
 .bg {
   position: relative;
-}
-
-.bg {
   content: '';
   background: linear-gradient(45deg, #8000ff , #850bff, #8f1fff, #9b37ff,  #b641ff, #d941ff,  #d437ff, #8f1fffff, #850bff, #8000ff);
   background-size: 400%;
@@ -182,7 +180,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--third-color);
-  background-color: var(--third-color);
+  background-color: var(--second-color);
 }
 
 h1,h2,p {
@@ -224,7 +222,7 @@ img {
 
 .home__title {
   font-size: var(--big-font-size);
-  color: var(--second-color);
+  color: var(--third-color);
   font-weight: var(--bold);
   font-family: 'Space Mono',sans-serif;
   margin-bottom: var(--mb-5);
@@ -247,7 +245,7 @@ img {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 2rem;
-  color: var(--second-color);
+  color: var(--third-color);
   letter-spacing: var(--mb-2);
   transition: all 0.3s ease;
 }
@@ -284,7 +282,7 @@ img {
 }
 
 .button:hover {
-  background-color: var(--second-color);
+  background-color: var(--fourth-color);
 }
 
 .about__button{
@@ -344,14 +342,14 @@ img {
 
 .skills__subtitle {
   margin-bottom: var(--mb-2);
-  color: var(--second-color);
+  color: var(--third-color);
   text-align: center;
   text-transform: uppercase;
 }
 
 .skills__text {
   margin-bottom: var(--mb-4);
-  color: var(--second-color);
+  color: var(--third-color);
   font-weight: var(--bold);
 }
 
@@ -364,7 +362,7 @@ img {
   padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0px 4px 25px rgba(255, 255, 255, 0.15);
 }
 
 .skills__icon {
@@ -376,7 +374,7 @@ img {
 .skills__names {
   display: flex;
   align-items: center;
-  color: var(--second-color);
+  color: var(--third-color);
 }
 
 .skills__bar {
@@ -390,7 +388,7 @@ img {
 }
 
 .skills__percentage{
-  color: var(--second-color);
+  color: var(--third-color);
 }
 
 .skills__html {
