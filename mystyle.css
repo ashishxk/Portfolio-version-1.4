@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Major+Mono+Display&family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap');
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -106,18 +108,32 @@ html{
 .bg {
   position: relative;
   content: '';
-  background: linear-gradient(45deg, #8000ff , #850bff, #8f1fff, #9b37ff,  #b641ff, #d941ff,  #d437ff, #8f1fffff, #850bff, #8000ff);
+  background: linear-gradient(45deg, #8000ff, #850bff, #8f1fff, #9b37ff, #b641ff, #d941ff, #d437ff, #8f1fffff, #850bff, #8000ff);
   background-size: 400%;
   animation: glowing 20s linear infinite;
 }
 
 
 @keyframes glowing {
-  0% { background-position: 0% 0; }
-  25% { background-position: 50% 0; }
-  50% { background-position: 100% 0; }
-  75% { background-position: 50% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0% 0;
+  }
+
+  25% {
+    background-position: 50% 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  75% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
 
 
@@ -129,8 +145,11 @@ html{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--second-color);
-  box-shadow: 0px 5px 1px var(--fourth-color);
+  background: linear-gradient(45deg, #8000ff, #850bff, #8f1fff, #9b37ff, #b641ff, #d941ff, #d437ff, #8f1fffff, #850bff, #8000ff);
+  transition: 0.5s;
+  background-size: 400%;
+  animation: glowing 20s linear infinite;
+  content: '';
 }
 
 .nav {
@@ -147,7 +166,7 @@ html{
 
 .nav__link {
   position: relative;
-  font-family: 'Space Mono',sans-serif;
+  font-family: 'Space Mono', sans-serif;
   color: var(--third-color);
   transition: all 0.3s ease;
   text-transform: uppercase;
@@ -158,7 +177,7 @@ html{
 
 .nav__link:hover {
   position: relative;
-  color: var(--fourth-color);
+  color: var(--second-color);
 }
 
 .nav__link:hover::after {
@@ -167,7 +186,7 @@ html{
 }
 
 .nav__logo {
-  color: var(--fourth-color);
+  color: var(--second-color);
   font-family: 'Major Mono Display', sans-serif;
   font-size: 3rem;
   font-weight: bold;
@@ -180,10 +199,11 @@ html{
 }
 
 .nav__toggle {
-  color: var(--first-color);
+  color: var(--second-color);
   font-size: 3rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  z-index: 100;
 }
 
 .nav__toggle:hover {
@@ -209,7 +229,9 @@ body {
   background-color: var(--second-color);
 }
 
-h1,h2,p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -250,7 +272,7 @@ img {
   font-size: var(--big-font-size);
   color: var(--third-color);
   font-weight: var(--bold);
-  font-family: 'Space Mono',sans-serif;
+  font-family: 'Space Mono', sans-serif;
   margin-bottom: var(--mb-5);
 }
 
@@ -258,7 +280,7 @@ img {
   font-size: var(--big-font-size);
   color: var(--second-color);
   font-weight: var(--bold);
-  font-family: 'Space Mono',sans-serif;
+  font-family: 'Space Mono', sans-serif;
   margin-bottom: var(--mb-5);
   text-align: center;
 }
@@ -277,7 +299,7 @@ img {
 }
 
 .home__social-icon:hover {
-  color: var(--first-color);
+  color: var(--fourth-color);
 }
 
 .home__img {
@@ -311,7 +333,7 @@ img {
   color: var(--second-color);
 }
 
-.about__button{
+.about__button {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--third-color);
@@ -322,11 +344,11 @@ img {
   letter-spacing: 0.1rem;
 }
 
-.about__button:hover{
+.about__button:hover {
   background-color: var(--second-color);
 }
 
-.btn{
+.btn {
   padding-top: 1.75rem;
 }
 
@@ -335,7 +357,7 @@ img {
   text-align: center;
 }
 
-.about__text{
+.about__text {
   font-weight: 700;
   color: var(--second-color);
 }
@@ -409,7 +431,7 @@ img {
   z-index: var(--z-back);
 }
 
-.skills__percentage{
+.skills__percentage {
   color: var(--fourth-color);
 }
 
@@ -495,7 +517,7 @@ img {
   transition: all 0.3s ease;
 }
 
-.footer__icon:hover{
+.footer__icon:hover {
   color: var(--first-color);
 }
 
@@ -524,8 +546,11 @@ img {
     left: 0%;
     width: 100%;
     padding: 3rem;
-    background-color: var(--second-color);
+    background: linear-gradient(45deg, #8000ff, #850bff, #8f1fff, #9b37ff, #b641ff, #d941ff, #d437ff, #8f1fffff, #850bff, #8000ff);
     transition: 0.5s;
+    background-size: 400%;
+    animation: glowing 20s linear infinite;
+    content: '';
   }
 
   .l-header {
@@ -534,8 +559,8 @@ img {
 
   .nav__link {
     position: relative;
-    font-family: 'Space Mono',sans-serif;
-    color: var(--first-color);
+    font-family: 'Space Mono', sans-serif;
+    color: var(--second-color);
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
@@ -549,7 +574,7 @@ img {
     padding-left: 1rem;
   }
 
-  .about__text{
+  .about__text {
     font-weight: bold;
     color: var(--second-color);
     text-align: justify;
@@ -559,12 +584,12 @@ img {
     text-transform: uppercase;
     font-size: 1.2rem;
   }
-  
-  .about__button{
+
+  .about__button {
     font-size: 1rem;
     padding: 0.5rem 2rem;
   }
-  
+
 }
 
 
