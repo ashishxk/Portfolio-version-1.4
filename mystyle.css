@@ -140,7 +140,7 @@ html {
 
 .l-header {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -174,6 +174,7 @@ html {
   letter-spacing: 0.3rem;
   font-size: 1rem;
   font-weight: 500;
+  font-weight: bold;
 }
 
 .nav__link:hover {
@@ -225,6 +226,7 @@ html {
 .active-link{
   color: var(--third-color);
 }
+
 
 .active::after {
   position: absolute;
@@ -405,6 +407,7 @@ img {
   margin-bottom: var(--mb-2);
   color: var(--third-color);
   text-align: center;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
