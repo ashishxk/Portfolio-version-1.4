@@ -1,3 +1,16 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("logo").style.fontSize = "1.5rem";
+  } else {
+    document.getElementById("logo").style.fontSize = "3rem";
+  }
+} 
+
+
+
+
 const showMenu = (toggleId, navId) =>{
   const toggle = document.getElementById(toggleId),
   nav = document.getElementById(navId)
