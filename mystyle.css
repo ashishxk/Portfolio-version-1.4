@@ -114,7 +114,6 @@ html {
 }
 
 
-
 @keyframes glowing {
   0% {
     background-position: 0% 0;
@@ -407,6 +406,7 @@ img {
   color: var(--third-color);
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 .skills__text {
@@ -464,8 +464,8 @@ img {
   width: 45%;
 }
 
-.skills__ux {
-  width: 55%;
+.skills__reactjs {
+  width: 30%;
 }
 
 .skills__bootstrap {
@@ -482,6 +482,10 @@ img {
 
 .skills__py {
   width: 55%;
+}
+
+.skills__mysql{
+  width: 65%;
 }
 
 .skills__img {
@@ -608,7 +612,7 @@ img {
 
   .skills__subtitle {
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 
   .about__button {
