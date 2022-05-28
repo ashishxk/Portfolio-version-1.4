@@ -11,19 +11,20 @@ function scrollFunction() {
 
 
 
-const showMenu = (toggleId, navId) =>{
-  const toggle = document.getElementById(toggleId),
-  nav = document.getElementById(navId)
-  
-  
-  if(toggle && nav){
-      toggle.addEventListener('click', ()=>{
-          nav.classList.toggle('show-menu')
-      })
-  }
-}
-showMenu('nav-toggle','nav-menu')
+window.addEventListener('DOMContentLoaded', event => {
+  const navbarToggler = document.body.querySelector('.nav__menu');
+  const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#nav-menu .nav__link')
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+          if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+          }
+      });
+  });
 
+});
 
 
 
