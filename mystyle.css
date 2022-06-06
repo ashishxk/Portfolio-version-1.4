@@ -183,9 +183,10 @@ html {
   color: var(--second-color);
 }
 
+
 .nav__link:hover::after {
   position: absolute;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
 }
 
 .nav__logo {
